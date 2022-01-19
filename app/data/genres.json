@@ -1,0 +1,21 @@
+{
+  "12": { "name": "Aventure" },
+  "14": { "name": "Fantasme" },
+  "16": { "name": "Animation" },
+  "18": { "name": "Drame" },
+  "27": { "name": "Horreur" },
+  "28": { "name": "Action" },
+  "35": { "name": "Comedie" },
+  "36": { "name": "Histoire" },
+  "37": { "name": "Western" },
+  "53": { "name": "Thriller" },
+  "80": { "name": "Crime" },
+  "99": { "name": "Documentaire" },
+  "878": { "name": "Science Fiction" },
+  "9648": { "name": "Mystère" },
+  "10402": { "name": "Musique" },
+  "10749": { "name": "Romance" },
+  "10751": { "name": "Famille" },
+  "10752": { "name": "Guerre" },
+  "10770": { "name": "Téléfilm" }
+}

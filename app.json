@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "entryPoint": "node_modules/expo/AppEntry.js",
+    "name": "Cine: Le guide du cinéma",
+    "slug": "cine-the-movie-guide",
+    "description": "Cine est votre guide de cinéma. Le moyen le plus rapide et le plus simple de trouver des films, des acteurs et des séries sur votre appareil. Découvrez les évaluations et les critiques de The Movie Database (TMDb).",
+    "version": "1.0.0",
+    "privacy": "public",
+    "orientation": "portrait",
+    "icon": "./app/assets/images/icon.png",
+    "splash": {
+      "image": "./app/assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false
+    }
+  }
+}

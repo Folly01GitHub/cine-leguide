@@ -1,0 +1,79 @@
+{
+  "name": "cine",
+  "version": "0.1.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "devDependencies": {
+    "@testing-library/react-native": "^7.1.0",
+    "babel-eslint": "^10.1.0",
+    "babel-preset-expo": "8.3.0",
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-native": "^3.10.0",
+    "husky": "^4.3.8",
+    "jest-expo": "^40.0.0",
+    "lint-staged": "^10.5.3",
+    "node-fetch": "^2.6.1",
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^12.0.0",
+    "@react-native-async-storage/async-storage": "~1.15.0",
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-navigation/bottom-tabs": "^5.11.7",
+    "@react-navigation/native": "^5.9.2",
+    "@react-navigation/stack": "^5.14.2",
+    "expo": "^44.0.0",
+    "expo-asset": "~8.4.6",
+    "expo-constants": "~13.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-native": "0.64.3",
+    "react-native-gesture-handler": "~2.1.0",
+    "react-native-image-viewing": "^0.2.0",
+    "react-native-modalize": "^2.0.8",
+    "react-native-portalize": "^1.0.7",
+    "react-native-read-more-text": "^1.1.2",
+    "react-native-reanimated": "~2.3.1",
+    "react-native-responsive-dimensions": "^3.1.1",
+    "react-native-safe-area-context": "3.3.2",
+    "react-native-screens": "~3.10.1",
+    "react-native-web": "0.17.1",
+    "react-native-webview": "11.15.0"
+  },
+  "scripts": {
+    "start": "expo start",
+    "eject": "expo eject",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start:web",
+    "web:build": "expo build:web",
+    "test": "jest",
+    "lint": "eslint .",
+    "ci": "yarn && yarn test"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "transform": {
+      "^.+\\.js$": "<rootDir>/jest/preProcessor.js"
+    },
+    "setupFiles": [
+      "<rootDir>/jest/setupFile.js"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
+}
